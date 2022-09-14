@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutFirst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/editTextHoursFirst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:inputType="number"
+            android:maxLength="2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="23" />
+
+        <TextView
+            android:id="@+id/textViewSeparator1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            app:layout_constraintBottom_toBottomOf="@id/editTextHoursFirst"
+            app:layout_constraintStart_toEndOf="@id/editTextHoursFirst"
+            app:layout_constraintTop_toTopOf="@id/editTextHoursFirst" />
+
+        <EditText
+            android:id="@+id/editTextMinutesFirst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLength="2"
+            app:layout_constraintBottom_toBottomOf="@id/editTextHoursFirst"
+            app:layout_constraintStart_toEndOf="@id/textViewSeparator1"
+            app:layout_constraintTop_toTopOf="@id/editTextHoursFirst"
+            tools:text="59" />
+
+        <TextView
+            android:id="@+id/textViewSeparator2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            app:layout_constraintBottom_toBottomOf="@id/editTextMinutesFirst"
+            app:layout_constraintStart_toEndOf="@id/editTextMinutesFirst"
+            app:layout_constraintTop_toTopOf="@id/editTextMinutesFirst" />
+
+        <EditText
+            android:id="@+id/editTextSecondsFirst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLength="2"
+            app:layout_constraintBottom_toBottomOf="@id/editTextHoursFirst"
+            app:layout_constraintStart_toEndOf="@id/textViewSeparator2"
+            app:layout_constraintTop_toTopOf="@id/editTextHoursFirst"
+            tools:text="59" />
+
+        <TextView
+            android:id="@+id/textViewSeparator3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            app:layout_constraintBottom_toBottomOf="@id/editTextSecondsFirst"
+            app:layout_constraintStart_toEndOf="@id/editTextSecondsFirst"
+            app:layout_constraintTop_toTopOf="@id/editTextSecondsFirst" />
+
+        <EditText
+            android:id="@+id/editTextFramesFirst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLength="2"
+            app:layout_constraintBottom_toBottomOf="@id/editTextHoursFirst"
+            app:layout_constraintStart_toEndOf="@id/textViewSeparator3"
+            app:layout_constraintTop_toTopOf="@id/editTextHoursFirst"
+            tools:text="25" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutSecond"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layoutFirst">
+
+        <EditText
+            android:id="@+id/editTextHoursSecond"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:inputType="number"
+            android:maxLength="2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="23" />
+
+        <TextView
+            android:id="@+id/textViewSeparator4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            app:layout_constraintBottom_toBottomOf="@id/editTextHoursSecond"
+            app:layout_constraintStart_toEndOf="@id/editTextHoursSecond"
+            app:layout_constraintTop_toTopOf="@id/editTextHoursSecond" />
+
+        <EditText
+            android:id="@+id/editTextMinutesSecond"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLength="2"
+            app:layout_constraintBottom_toBottomOf="@id/editTextHoursSecond"
+            app:layout_constraintStart_toEndOf="@id/textViewSeparator4"
+            app:layout_constraintTop_toTopOf="@id/editTextHoursSecond"
+            tools:text="59" />
+
+        <TextView
+            android:id="@+id/textViewSeparator5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            app:layout_constraintBottom_toBottomOf="@id/editTextMinutesSecond"
+            app:layout_constraintStart_toEndOf="@id/editTextMinutesSecond"
+            app:layout_constraintTop_toTopOf="@id/editTextMinutesSecond" />
+
+        <EditText
+            android:id="@+id/editTextSecondsSecond"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLength="2"
+            app:layout_constraintBottom_toBottomOf="@id/editTextMinutesSecond"
+            app:layout_constraintStart_toEndOf="@id/textViewSeparator5"
+            app:layout_constraintTop_toTopOf="@id/editTextMinutesSecond"
+            tools:text="59" />
+
+        <TextView
+            android:id="@+id/textViewSeparator6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            app:layout_constraintBottom_toBottomOf="@id/editTextSecondsSecond"
+            app:layout_constraintStart_toEndOf="@id/editTextSecondsSecond"
+            app:layout_constraintTop_toTopOf="@id/editTextSecondsSecond" />
+
+        <EditText
+            android:id="@+id/editTextFramesSecond"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLength="2"
+            app:layout_constraintBottom_toBottomOf="@id/editTextHoursSecond"
+            app:layout_constraintStart_toEndOf="@id/textViewSeparator6"
+            app:layout_constraintTop_toTopOf="@id/editTextHoursSecond"
+            tools:text="25" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layoutSecond"
+        tools:text="23:59:59:25" />
+
+    <Button
+        android:id="@+id/buttonPlus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="44dp"
+        android:text="+"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonMinus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="-"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonPlus" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
