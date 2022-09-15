@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private Button buttonPlus;
     private Button buttonMinus;
+    private Button buttonReset;
 
     private TextView textViewResult;
 
@@ -58,6 +59,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         editTextFramesSecond = findViewById(R.id.editTextFramesSecond);
         buttonPlus = findViewById(R.id.buttonPlus);
         buttonMinus = findViewById(R.id.buttonMinus);
+        buttonReset = findViewById(R.id.buttonReset);
         textViewResult = findViewById(R.id.textViewResult);
     }
 
@@ -179,6 +181,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void setClickListeners() {
         buttonPlus.setOnClickListener(this);
         buttonMinus.setOnClickListener(this);
+        buttonReset.setOnClickListener(this);
     }
 
     @Override
@@ -199,8 +202,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 minutesResult = (Integer.parseInt(minutesFirst) - Integer.parseInt(minutesSecond));
                 textViewResult.setText(hoursResult + ":" + minutesResult + ":" + secondsResult + ":" + framesResult);
                 break;
-            default:
-                return;
+            case R.id.buttonReset:
+                textViewResult.setText("");
+                break;
         }
     }
 
